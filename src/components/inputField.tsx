@@ -221,7 +221,7 @@ export function InputField({
         </div>
         <Select id="mode" required value={form.mode} onChange={handleChange}>
           <option value="">-- Select mode --</option>
-          <option value="operational">Operations</option>
+          <option value="operational">Operational</option>
           <option value="formation">Yet to Launch</option>
         </Select>
       </div>

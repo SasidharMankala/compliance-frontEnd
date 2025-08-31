@@ -61,6 +61,7 @@ const HeroSection = () => {
             <TabItem
               disabled={formPayload === null}
               title="Chat with AI to know more"
+              
               icon={RiChatAiFill}
             >
               <ChatTab resultData={resultData} payload={formPayload} />
