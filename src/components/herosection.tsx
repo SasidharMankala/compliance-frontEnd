@@ -27,6 +27,7 @@ interface PayloadData {
 const HeroSection = () => {
   const [formPayload, setFormPayload] = useState<PayloadData | null>(null);
   const [resultData, setResultData] = useState<ComplianceResult | null>(null);
+  const [chatEnabled, setChatEnabled] = useState<boolean>(false);
 
   // This function will be called from InputField on every form change
   const updateFormPayload = (payload: PayloadData) => {
@@ -36,6 +37,7 @@ const HeroSection = () => {
   // This function will be called from InputField on submit
   const updateFormData = (data: ComplianceResult) => {
     setResultData(data);
+    setChatEnabled(true);
   };
 
   return (
@@ -59,9 +61,8 @@ const HeroSection = () => {
               <ResultSection resultData={resultData} />
             </TabItem>
             <TabItem
-              disabled={formPayload === null}
-              title="Chat with AI to know more"
-              
+              disabled={!chatEnabled}
+              title={chatEnabled ? "Chat with AI to know more" : "Fill and submit the form to enable chat"}
               icon={RiChatAiFill}
             >
               <ChatTab resultData={resultData} payload={formPayload} />
