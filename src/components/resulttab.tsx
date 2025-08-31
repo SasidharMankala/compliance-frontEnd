@@ -38,7 +38,7 @@ const ResultTab = ({ resultData }: { resultData: ComplianceResult | null }) => {
       </Card>
       <Card className="overflow-y-auto">
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Compliance Details
+          Compliance Details - Click on each to know in detail
         </h5>
         {resultData?.summary.total !== 0 ? (
           <Accordion collapseAll>
