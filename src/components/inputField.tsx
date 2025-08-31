@@ -287,8 +287,8 @@ export function InputField({
             onChange={handleChange}
           >
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
         <div className="flex flex-col">
@@ -301,8 +301,8 @@ export function InputField({
             onChange={handleChange}
           >
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
       </div>
@@ -337,8 +337,8 @@ export function InputField({
           </div>
           <Select id="sellsData" value={form.sellsData} onChange={handleChange}>
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
       </div>
@@ -367,8 +367,8 @@ export function InputField({
             onChange={handleChange}
           >
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
         <div className="flex flex-col">
@@ -377,8 +377,8 @@ export function InputField({
           </div>
           <Select id="isBA" value={form.isBA} onChange={handleChange}>
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
       </div>
@@ -405,8 +405,8 @@ export function InputField({
             onChange={handleChange}
           >
             <option value="">-- Select --</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </Select>
         </div>
       </div>
